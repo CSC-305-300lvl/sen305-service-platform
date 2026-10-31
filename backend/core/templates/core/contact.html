@@ -3,17 +3,35 @@
 {% block title %}Contact | VUA ServiceDesk{% endblock %}
 
 {% block content %}
+
 <section class="page-heading">
     <p class="eyebrow">Get in touch</p>
-    <h1>Contact the ServiceDesk team</h1>
+
+    <h1>Contact Us</h1>
+
+    <p>
+        Contact the department for enquiries about service requests
+        and maintenance support.
+    </p>
 </section>
 
 <section class="status-panel">
-    <h2>{{ department_name }}</h2>
+    <h2>Contact Information</h2>
+
     <p>
-        Email:
+        <strong>Department:</strong>
+        {{ department_name }}
+    </p>
+
+    <p>
+        <strong>Email:</strong>
         <a href="mailto:{{ email }}">{{ email }}</a>
     </p>
-    <p>Office hours: {{ office_hours }}</p>
+
+    <p>
+        <strong>Office Hours:</strong>
+        {{ office_hours }}
+    </p>
 </section>
+
 {% endblock %}
